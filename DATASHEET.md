@@ -23,7 +23,7 @@ Organization: *University of California, Berkeley*
 
 4. **Any other comments?**
 
-	*Your Answer Here*
+	Nope. 
 
 
 ## Composition
@@ -113,55 +113,55 @@ Organization: *University of California, Berkeley*
 
 1. **How was the data associated with each instance acquired?** Was the data directly observable (e.g. raw text, movie ratings), reported by subjects (e.g. survey responses), or indirectly inferred/derived from other data (e.g. part-of-speech tags, model-based guesses for age or language)? If data was reported by subjects or indirectly inferred/derived from other data, was the data validated/verified? If so, please describe how.
 
-	*Your Answer Here*
+	Mainly reported by subjects doing census collection, depending on countries' methodology of information collection (either self-reported or reported by census workers). No guesswork made about individuals beyond this. 
 
 2. **What mechanisms or procedures were used to collect the data (e.g. hardware apparatus or sensor, manual human curation, software program, software API)?** How were these mechanisms or procedures validated?
 
-	*Your Answer Here*
+	Assuming manual human curation envelops the human element of collecting this data by census workers and then reporting it, this involves manual human curation to collate. Methodology is peer-reviewed and all data on collection are provided via UN documentation. 
 
 3. **If the dataset is a sample from a larger set, what was the sampling strategy (e.g. deterministic, probabilistic with specific sampling probabilities)?**
 
-	*Your Answer Here*
+	N/A
 
 4. **Who was involved in the data collection process (e.g. students, crowdworkers, contractors) and how were they compensated (e.g. how much were crowdworkers paid)?**
 
-	*Your Answer Here*
+	Unclear. 
 
 5. **Over what timeframe was the data collected?** Does this timeframe match the creation timeframe of the data associated with the instances (e.g. recent crawl of old news articles)? If not, please describe the timeframe in which the data associated with the instances was created. Finally, list when the dataset was first published.
 
-	*Your Answer Here*
+	As of 2022, this data is broken down by 1-year increments rather than the original practice of doing it every 5-years. So this data is either extrapolated or collected over a 1-year span, though many countries do collection at different intervals. 
 
 7. **Were any ethical review processes conducted (e.g. by an institutional review board)?** If so, please provide a description of these review processes, including the outcomes, as well as a link or other access point to any supporting documentation.
 
-	*Your Answer Here*
+	Reviewed by the Population Division of the United Nations. The council gathers in [general assembly](https://www.un.org/development/desa/pd/content/general-assembly) meetings to discuss and approve these occurences. 
 
 8. **Does the dataset relate to people?** If not, you may skip the remainder of the questions in this section.
 
-	*Your Answer Here*
+	Yep. 
 
 9. **Did you collect the data from the individuals in question directly, or obtain it via third parties or other sources (e.g. websites)?**
 
-	*Your Answer Here*
+	Mix. Primarily gathered by other collations by different countries/regions.
 
 10. **Were the individuals in question notified about the data collection?** If so, please describe (or show with screenshots or other information) how notice was provided, and provide a link or other access point to, or otherwise reproduce, the exact language of the notification itself.
 
-	*Your Answer Here*
+	Yes. Census workers either verify with individuals or the data collection is itself is notification in the case of self-reported data. 
 
 11. **Did the individuals in question consent to the collection and use of their data?** If so, please describe (or show with screenshots or other information) how consent was requested and provided, and provide a link or other access point to, or otherwise reproduce, the exact language to which the individuals consented.
 
-	*Your Answer Here*
+	Yes. There is not any major personal data here, but the data is intrinsically consensual in the cases in which it is gathered either by census workers or self-reported census. 
 
 12. **If consent was obtained, were the consenting individuals provided with a mechanism to revoke their consent in the future or for certain uses?** If so, please provide a description, as well as a link or other access point to the mechanism (if appropriate).
 
-	*Your Answer Here*
+	Unclear, and the approach varies by country. 
 
 13. **Has an analysis of the potential impact of the dataset and its use on data subjects (e.g. a data protection impact analysis) been conducted?** If so, please provide a description of this analysis, including the outcomes, as well as a link or other access point to any supporting documentation.
 
-	*Your Answer Here*
+	N/A
 
 14. **Any other comments?**
 
-	*Your Answer Here*
+	No. 
 
 
 ## Preprocessing / Cleaning / Labeling
@@ -170,19 +170,19 @@ Organization: *University of California, Berkeley*
 
 1. **Was any preprocessing/cleaning/labeling of the data done (e.g. discretization or bucketing, tokenization, part-of-speech tagging, SIFT feature extraction, removal of instances, processing of missing values)?** If so, please provide a description. If not, you may skip the remainder of the questions in this section.
 
-	*Your Answer Here*
+	Bucketing into regions of the world. Otherwise, unclear. 
 
 2. **Was the "raw" data saved in addition to the preprocessed/cleaned/labeled data (e.g. to support unanticipated future uses)?** If so, please provide a link or other access point to the "raw" data.
 
-	*Your Answer Here*
+	Raw data can be found [here](https://www.kaggle.com/datasets/iamsouravbanerjee/world-population-dataset/download?datasetVersionNumber=3)
 
 3. **Is the software used to preprocess/clean/label the instances available?** If so, please provide a link or other access point.
 
-	*Your Answer Here*
+	N/A
 
 4. **Any other comments?**
 
-	*Your Answer Here*
+	No.
 
 
 ## Uses
@@ -191,27 +191,27 @@ Organization: *University of California, Berkeley*
 
 1. **Has the dataset been used for any tasks already?** If so, please provide a description.
 
-	*Your Answer Here*
+	Yes - many estimations or projections based on world population, informing intervention of human rights, aid, etc. Unclear if the 2022 data specifically has been actioned, but previous census data has certainly been used to inform population-based decisions. 
 
 2. **Is there a repository that links to any or all papers or systems that use the dataset?** If so, please provide a link or other access point.
 
-	*Your Answer Here*
+	This is the [closest page](https://population.un.org/wpp/Download/Standard/MostUsed/) to this description.
 
 3. **What (other) tasks could the dataset be used for?**
 
-	*Your Answer Here*
+	The potential tasks are legion, such as potential immigration-based data, refugee statistics, etc. 
 
 4. **Is there anything about the composition of the dataset or the way it was collected and preprocessed/cleaned/labeled that might impact future uses?** For example, is there anything that a future user might need to know to avoid uses that could result in unfair treatment of individuals or groups (e.g. stereotyping, quality of service issues) or other undesirable harms (e.g. financial harms, legal risks) If so, please provide a description. Is there anything a future user could do to mitigate these undesirable harms?
 
-	*Your Answer Here*
+	If (when) borders change, the data may be complicated by its separation between regions in the past vs the present. There's nothing a user can do about this, and no major harm to individuals in the dataset.
 
 5. **Are there tasks for which the dataset should not be used?** If so, please provide a description.
 
-	*Your Answer Here*
+	Committing crimes, probably. Nothing explicitly. 
 
 6. **Any other comments?**
 
-	*Your Answer Here*
+	Nope!
 
 
 ## Distribution
@@ -220,31 +220,31 @@ Organization: *University of California, Berkeley*
 
 1. **Will the dataset be distributed to third parties outside of the entity (e.g. company, institution, organization) on behalf of which the dataset was created?** If so, please provide a description.
 
-	*Your Answer Here*
+	Yes - the world and public at large. 
 
 2. **How will the dataset will be distributed (e.g. tarball on website, API, GitHub)?** Does the dataset have a digital object identifier (DOI)?
 
-	*Your Answer Here*
+	Website, press briefing, publicity in general. DOI is unclear. 
 
 3. **When will the dataset be distributed?**
 
-	*Your Answer Here*
+	It is distributed now. 
 
 4. **Will the dataset be distributed under a copyright or other intellectual property (IP) license, and/or under applicable terms of use (ToU)?** If so, please describe this license and/or ToU, and provide a link or other access point to, or otherwise reproduce, any relevant licensing terms or ToU, as well as any fees associated with these restrictions.
 
-	*Your Answer Here*
+	No - this is public information. 
 
 5. **Have any third parties imposed IP-based or other restrictions on the data associated with the instances?** If so, please describe these restrictions, and provide a link or other access point to, or otherwise reproduce, any relevant licensing terms, as well as any fees associated with these restrictions.
 
-	*Your Answer Here*
+	No. 
 
 6. **Do any export controls or other regulatory restrictions apply to the dataset or to individual instances?** If so, please describe these restrictions, and provide a link or other access point to, or otherwise reproduce, any supporting documentation.
 
-	*Your Answer Here*
+	Not beyond what is expected of international law - some countries (non-members of the UN) may not be happy about data or not want to be involved with the information dissemination. The information is available to any who would like to use it across the world. 
 
 7. **Any other comments?**
 
-	*Your Answer Here*
+	No.
 
 
 ## Maintenance
@@ -253,32 +253,40 @@ Organization: *University of California, Berkeley*
 
 1. **Who is supporting/hosting/maintaining the dataset?**
 
-	*Your Answer Here*
+	the UN Popoulation division. 
 
 2. **How can the owner/curator/manager of the dataset be contacted (e.g. email address)?**
 
-	*Your Answer Here*
+	
+	population@un.org
+
+	+1-212-963-3209
+
+	Office of the Director, Population Division, United Nations
+	2 United Nations Plaza, Room DC2-1950
+	New York, NY 10017
+	USA
 
 3. **Is there an erratum?** If so, please provide a link or other access point.
 
-	*Your Answer Here*
+	N/A
 
 4. **Will the dataset be updated (e.g. to correct labeling errors, add new instances, delete instances)?** If so, please describe how often, by whom, and how updates will be communicated to users (e.g. mailing list, GitHub)?
 
-	*Your Answer Here*
+	Yes, it will be updated yearly with updated population information by the Population Division. It is publicly released every year. 
 
 5. **If the dataset relates to people, are there applicable limits on the retention of the data associated with the instances (e.g. were individuals in question told that their data would be retained for a fixed period of time and then deleted)?** If so, please describe these limits and explain how they will be enforced.
 
-	*Your Answer Here*
+	N/A, unclear. 
 
 6. **Will older versions of the dataset continue to be supported/hosted/maintained?** If so, please describe how. If not, please describe how its obsolescence will be communicated to users.
 
-	*Your Answer Here*
+	*Maintained - unclear. The data are still available from past developments. 
 
 7. **If others want to extend/augment/build on/contribute to the dataset, is there a mechanism for them to do so?** If so, please provide a description. Will these contributions be validated/verified? If so, please describe how. If not, why not? Is there a process for communicating/distributing these contributions to other users? If so, please provide a description.
 
-	*Your Answer Here*
+	Yes - UN provides all raw data if requested. There are already third-party datasets visualizing and developing based on this data. 
 
 8. **Any other comments?**
 
-	*Your Answer Here*
+	Nope.
