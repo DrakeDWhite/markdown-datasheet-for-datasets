@@ -1,4 +1,4 @@
-# Datasheet: *Your Dataset Name Here*
+# Datasheet: *World Population Prospects*
 
 Author: *Drake White*
 
@@ -11,15 +11,15 @@ Organization: *University of California, Berkeley*
 
 1. **For what purpose was the dataset created?** Was there a specific task in mind? Was there a specific gap that needed to be filled? Please provide a description.
 
-	*Your Answer Here*
+	The intention of creating this dataset was to get a comprehensive view of the world population. Specifically, data like growth rates, percentage of world growth, etc are useful to extrapolate from this data. 
 
 2. **Who created this dataset (e.g. which team, research group) and on behalf of which entity (e.g. company, institution, organization)**?
 
-	*Your Answer Here*
+	Department of Economic and Social Affairs, Population Division, on behalf of the United Nations. 
 
 3. **What support was needed to make this dataset?** (e.g. who funded the creation of the dataset? If there is an associated grant, provide the name of the grantor and the grant name and number, or if it was supported by a company or government agency, give those details.)
 
-	*Your Answer Here*
+	Funded by the United Nations, which collects funding from a variety of the world's countries (United States, EU, Asia, etc)
 
 4. **Any other comments?**
 
@@ -32,71 +32,79 @@ Organization: *University of California, Berkeley*
 
 1. **What do the instances that comprise the dataset represent (e.g. documents, photos, people, countries)?** Are there multiple types of instances (e.g. movies, users, and ratings; people and interactions between them; nodes and edges)? Please provide a description.
 
-	*Your Answer Here*
+	In this particular dataset (world population by country) each instance is each individual country in the world.
+
+	The definition of the regions are provided on (this page)[https://population.un.org/wpp/DefinitionOfRegions/}] of the UN website, but in brief:
+
+	Sustainable Development Goal (SDG) regions: countries and areas are grouped into eight Sustainable Development Goal (SDG) regions as defined by the United Nations Statistics Division and used for The Sustainable Development Goals Report (https://unstats.un.org/sdgs/indicators/regional-groups/). These regions are further divided into 21 geographic subregions.
+
+	Geographic regions: countries and areas are also grouped geographically into six major areas designated as: Africa; Asia; Europe; Latin America and the Caribbean; Northern America, and Oceania.
+
+	UN development groups: the designation of “more developed” and “less developed”, or “developed” and “developing”, is intended for statistical purposes and does not express a judgment about the stage in the development process reached by a particular country or area.
 
 2. **How many instances are there in total (of each type, if appropriate)?**
 
-	*Your Answer Here*
+	There are 234 countries in the dataset by these definitions.
 
 3. **Does the dataset contain all possible instances or is it a sample (not necessarily random) of instances from a larger set?** If the dataset is a sample, then what is the larger set? Is the sample representative of the larger set (e.g. geographic coverage)? If so, please describe how this representativeness was validated/verified. If it is not representative of the larger set, please describe why not (e.g. to cover a more diverse range of instances, because instances were withheld or unavailable).
 
-	*Your Answer Here*
+	These data are intended to be comprehensive based on the definitions provided in the page linked above. There are of course some political considerations to be made about what the UN recognizes as a "country" due to border conflicts, conflicting claims of ownership (eg China & Taiwan), ongoing wars, etc. All-in-all, it is representative of all geographic regions in the world, but the division of sub-regions (countries) may be debated.
 
 4. **What data does each instance consist of?** "Raw" data (e.g. unprocessed text or images) or features? In either case, please provide a description.
 
-	*Your Answer Here*
+	In this case, we are mainly interested in just the numerical value of the country's human population. There is the possibility of more granular meta/"raw" data, but for this dataset we only care about population as it relates to its change over time. 
 
 5. **Is there a label or target associated with each instance?** If so, please provide a description.
 
-	*Your Answer Here*
+	N/A
 
 6. **Is any information missing from individual instances?** If so, please provide a description, explaining why this information is missing (e.g. because it was unavailable). This does not include intentionally removed information, but might include, e.g. redacted text.
 
-	*Your Answer Here*
+	No, though some data are estimated and projections rather than set values, such as in the case of developing nations that don't have an existing imperical census system.
 
 7. **Are relationships between individual instances made explicit (e.g. users' movie ratings, social network links)?** If so, please describe how these relationships are made explicit.
 
-	*Your Answer Here*
+	Yes. They are related by their geographic location, and the placement on the list of total world population. For example - China is #1, India is #2, US is #3. Their relationship is simply based on the numerical ordering of their total population. 
 
 8. **Are there recommended data splits (e.g. training, development/validation, testing)?** If so, please provide a description of these splits, explaining the rationale behind them.
 
-	*Your Answer Here*
+	N/A
 
 9. **Are there any errors, sources of noise, or redundancies in the dataset?** If so, please provide a description.
 
-	*Your Answer Here*
+	None beyond what is outlined in the answer to question 6.
 
 10. **Is the dataset self-contained, or does it link to or otherwise rely on external resources (e.g. websites, tweets, other datasets)?** If it links to or relies on external resources, a) are there guarantees that they will exist, and remain constant, over time; b) are there official archival versions of the complete dataset (i.e., including the external resources as they existed at the time the dataset was created); c) are there any restrictions (e.g. licenses, fees) associated with any of the external resources that might apply to a future user? Please provide descriptions of all external resources and any restrictions associated with them, as well as links or other access points, as appropriate.
 
-	*Your Answer Here*
+	All data for world population (setting aside other datasets, like prevalance of HIV in different countries) are based on the censuses of each member country. These census will continue to exist as long as the country does (a non-zero concern in the political climate of some regions). There are archival versions of the data from previous years on the UN website. No restrictions for membership in this dataset other than needing to make the data available to the UN council. 
 
 11. **Does the dataset contain data that might be considered confidential (e.g. data that is protected by legal privilege or by doctor-patient confidentiality, data that includes the content of individuals' non-public communications)?** If so, please provide a description.
 
-	*Your Answer Here*
+	No - though individual data is collected as part of country censuses, so presumedly there is confidential data involved in the raw data collection that is not contained within this dataset.
 
 12. **Does the dataset contain data that, if viewed directly, might be offensive, insulting, threatening, or might otherwise cause anxiety?** If so, please describe why.
 
-	*Your Answer Here*
+	*Potentially - population growth is a regular concern for some people, especially in the most affected countries. 
 
 13. **Does the dataset relate to people?** If not, you may skip the remaining questions in this section.
 
-	*Your Answer Here*
+	Yes
 
 14. **Does the dataset identify any subpopulations (e.g. by age, gender)?** If so, please describe how these subpopulations are identified and provide a description of their respective distributions within the dataset.
 
-	*Your Answer Here*
+	There is potential for filtering depending on which dataset we use from the UN, but in this case, no there is no breakup beyond subpopulations other than geographic area to which a person belongs. 
 
 15. **Is it possible to identify individuals (i.e., one or more natural persons), either directly or indirectly (i.e., in combination with other data) from the dataset?** If so, please describe how.
 
-	*Your Answer Here*
+	No.
 
 16. **Does the dataset contain data that might be considered sensitive in any way (e.g. data that reveals racial or ethnic origins, sexual orientations, religious beliefs, political opinions or union memberships, or locations; financial or health data; biometric or genetic data; forms of government identification, such as social security numbers; criminal history)?** If so, please provide a description.
 
-	*Your Answer Here*
+	One can presume the likelihood is high that an individual living in China is chinese, for example, so one could argue there is some ethnic information here, but not regarding any particular individuals. No other sensitive info or PII.
 
 17. **Any other comments?**
 
-	*Your Answer Here*
+	Nope. 
 
 
 ## Collection
