@@ -34,7 +34,7 @@ Organization: *University of California, Berkeley*
 
 	In this particular dataset (world population by country) each instance is each individual country in the world.
 
-	The definition of the regions are provided on (this page)[https://population.un.org/wpp/DefinitionOfRegions/}] of the UN website, but in brief:
+	The definition of the regions are provided on [this page](https://population.un.org/wpp/DefinitionOfRegions/) of the UN website, but in brief:
 
 	Sustainable Development Goal (SDG) regions: countries and areas are grouped into eight Sustainable Development Goal (SDG) regions as defined by the United Nations Statistics Division and used for The Sustainable Development Goals Report (https://unstats.un.org/sdgs/indicators/regional-groups/). These regions are further divided into 21 geographic subregions.
 
