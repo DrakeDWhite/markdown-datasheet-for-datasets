@@ -1,8 +1,8 @@
 # Datasheet: *Your Dataset Name Here*
 
-Author: *Your Name Here*
+Author: *Drake White*
 
-Organization: *Your Organization Here*
+Organization: *University of California, Berkeley*
 
 
 ## Motivation
